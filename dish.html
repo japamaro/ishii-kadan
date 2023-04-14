@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <title>お料理</title>
+    <!-- アイコンの設置 -->
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="img/android-chrome-192x192.png">
+    
+    <!-- reset.css -->
+    <link rel="stylesheet" href="css/reset.css">
+    <!-- style.css -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- aosのcss -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- aos.css -->
+    <link rel="stylesheet" href="css/aos.css">
+    <!-- flatpickrのcss-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr@4.6.13/dist/flatpickr.min.css">
+    <link rel="stylesheet" type="text/css" href="https://npmcdn.com/flatpickr/dist/themes/dark.css">
+
+</head>
+
+<body id="dish" class="underlayer">
+    <header class="header">
+        <div class="header_inner">
+            <h1 class="header_logo">
+                <a href="index.html"><img src="img/dish/sub-header-logo.png" alt="花のロゴマーク"></a>
+            </h1><!-- /.header_logo -->
+            <nav class="header_nav" id="js-nav">
+                <ul class="header_list">
+                    <li><a href="room.html">お部屋</a></li>
+                    <li><a href="dish.html">お料理</a></li>
+                    <li><a href="onsen.html">温泉</a></li>
+                </ul>
+            </nav><!-- /.header_nav -->
+            <div class="header_btn">
+                <a href="#" class="modal__btn" data-micromodal-trigger="modal-1" role="button">宿泊予約</a>
+            </div><!-- /.header_btn -->
+            <button type="button" class="hamburger" id="js-hamburger">
+                <span class="hamburger_line"></span>
+            </button>
+        </div><!-- /.header_inner -->
+    </header>
+    <main class="main">
+        <div class="mv">
+            <div class="mv_inner mv_dish">
+                <h2 class="mv_ttl">お料理</h2>
+            </div><!-- /.mv_inner -->
+        </div><!-- /.mv -->
+        <div class="main_inner">
+            <!-- breadcrumbs -->
+            <article class="breadcrumbs">
+                <div class="breadcrumbs_inner">
+                    <ul class="breadcrumbs_list">
+                        <li class="breadcrumbs_item">
+                            <a href="index.html" class="breadcrumbs_link">トップ</a>
+                        </li>
+                        <li class="breadcrumbs_item">
+                            <a href="dish.html" class="breadcrumbs_link">お料理</a>
+                        </li>
+                    </ul>
+                </div>
+            </article><!-- /breadcrumbs -->
+            <div class="sub">
+                <p class="sub_desc">
+                    地元温海の市場で仕入れた食材のみを使った食材をふんだんに使い、 <br>大将の技が光る「温海料理」<br>四季ごと、日ごとに変化する味わいを、どうぞご堪能ください。
+                </p><!-- /.sub_desc -->
+                <div class="sub_inner">
+                    <section class="sub_content dish_content" data-aos="fade-up">
+                        <div class="sub_sentence sub_sentence--bg">
+                            <h3 class="sub_title">
+                                地元食材にこだわった会席料理
+                            </h3><!-- /.room_title -->
+                            <p class="sub_txt">
+                                みずみずしくほのかに甘い野菜、新鮮で味に深みがある魚介類、肉類。<br>旬の素材をそのままに生かす、経験に裏打ちされた確かな技。<br>四季ごと、日ごとに変化する味わいを、どうぞご堪能ください。
+                            </p><!-- /.room_txt -->
+                        </div><!-- /.room_sentence -->
+                        <div class="sub_img">
+                            <img src="img/dish/menu01.png" alt="海鮮丼と天ぷらと味噌汁が並んでいる">
+                        </div><!-- /.sub_img -->
+                    </section><!-- /.sub_content -->
+                    <section class="sub_content dish_content" data-aos="fade-up">
+                        <div class="sub_sentence sub_sentence--bg">
+                            <h3 class="sub_title">
+                                温海の漁港で目利きの品を
+                            </h3><!-- /.room_title -->
+                            <p class="sub_txt">石井花壇でお出しする料理はすべて料理長である大将の目利きで、<br>
+                                温海の魚市場でその日のうちに仕入れたものを使用しております。<br>日本海の宝玉を十分にお楽しみください。</p><!-- /.room_txt -->
+                        </div><!-- /.room_sentence -->
+                        <div class="sub_img">
+                            <img src="img/dish/menu02.png" alt="たこやエビ、魚など複数の魚介類が敷き詰められた氷の中に漬かっている。">
+                        </div><!-- /.sub_img -->
+                    </section><!-- /.sub_content -->
+                    <section class="sub_content dish_content" data-aos="fade-up">
+                        <div class="sub_sentence sub_sentence--bg">
+                            <h3 class="sub_title">
+                                食材が一流、職人も一流
+                            </h3><!-- /.room_title -->
+                            <p class="sub_txt">
+                                石井花壇の料理人は料亭で20年経験を積んだものばかり。<br>その時の最も旬な食材を、最高の調理でお届けします。<br>また、お料理への細かいご要望にもお答えできますので、
+                                お気軽にお申し付けください。</p><!-- /.room_txt -->
+                        </div><!-- /.room_sentence -->
+                        <div class="sub_img">
+                            <img src="img/dish/menu03.png" alt="料理人が真剣に寿司を握っている">
+                        </div><!-- /.sub_img -->
+                    </section><!-- /.sub_content -->
+                </div><!-- /.sub_inner -->
+            </div><!-- /.sub -->
+        </div><!-- /.main_inner -->
+        <!-- フォーム部分 -->
+        <div id="modal-1" aria-hidden="true">
+            <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+                <div class="modal__container reserve" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
+                    <form action="#">
+                        <div class="reserve_inner">
+                            <div class="modal__close" aria-label="Close modal" data-micromodal-close>
+                                <img src="img/modal/close.png"
+                                    srcset="img/modal/close.png 1x, img/modal/close@2x.png 2x" alt="閉じるボタン">
+                            </div><!-- /.reserve_btn -->
+                            <div class="reserve_ttl">
+                                <p>宿泊予約</p>
+                            </div><!-- /.reserve_ttl -->
+                            <dl class="form_content">
+                                <dt class="form_ttl"><label for="username">お名前</label></dt>
+                                <dd class="form_data"><input type="text" id="username" name="username"
+                                        placeholder="例：石井正悟"></dd>
+
+                                <dt class="form_ttl"><label for="email">メールアドレス</label></dt>
+                                <dd class="form_data"><input type="email" id="email" name="email"
+                                        placeholder="Example@example.com"></dd>
+
+                                <dt class="form_ttl"><label for="plan-select">ご希望プラン <br class="sp">（空いているプランのみ表示されます。）
+                                </dt>
+
+                                <dd class="form_data">
+                                    <select name="select" id="plan-select">
+                                        <option value="">プランを選択してください</option>
+                                        <option value="">➀【期間限定】海辺の四季旬彩、贅沢美味懐石プラン</option>
+                                        <option value="">➁平日に優雅に楽しむ、特別宿泊プラン </option>
+                                        <option value="">⓷絶景貸切露天と個室会席を満喫できるファミリープラン</option>
+                                    </select>
+                                </dd>
+                                <dt class="form_ttl"><label for="js-flatpickr">日時選択</label></dt>
+                                <dd class="form_data"><input type="text" name="flatpickr" id="js-flatpickr"
+                                        placeholder="日時を選択してください"></dd>
+                            </dl>
+                            <a href="#" class="form_btn">送信する</a>
+                        </div><!-- /.reserve_inner -->
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <footer class="footer">
+        <div class="footer_inner">
+            <div class="footer_list">
+                <a href="room.html">
+                    <p class="footer_item">お部屋</p><!-- /.footer_item -->
+                </a>
+                <a href="dish.html">
+                    <p class="footer_item">お料理</p><!-- /.footer_item -->
+                </a>
+                <a href="onsen.html">
+                    <p class="footer_item">温泉</p><!-- /.footer_item -->
+                </a>
+            </div><!-- /.footer_list -->
+            <div class="footer_logo">
+                <a href="index.html"><img src="img/top-page/footer-logo.png"
+                        srcset="img/top-page/footer-logo.png 1x, img/top-page/footer-logo@2x.png 2x"
+                        alt="石井花壇のロゴマーク"></img></a>
+            </div><!-- /.footer_logo -->
+            <div class="footer_info">
+                <p class="adress">〒000-0000　山形県鶴岡市xxxxxxxxxxx</p><!-- /.adress -->
+                <p class="tel">
+                    TEL.000-0000-0000　FAX.00-0000-0000
+                </p><!-- /.tel -->
+            </div><!-- /.footer_info -->
+        </div><!-- /.footer_inner -->
+        <p class="copyright">
+            Copyright &copy;石井花壇 All Rights Reserved.
+        </p><!-- /.copyright -->
+
+    </footer><!-- /.footer -->
+    <!-- ジェイクエリのcdn -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"
+        integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <!-- Micromodalのcdn -->
+    <script src="https://cdn.jsdelivr.net/npm/micromodal@0.4.10/dist/micromodal.min.js"></script>
+    <!-- flatpickrのcdn-->
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr@4.6.13/dist/flatpickr.min.js"></script>
+    <!-- flatpickr日本語化 -->
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr/dist/l10n/ja.js"></script>
+    <!-- aosのJavascript -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- 自分のjsファイル -->
+    <script src="js/script.js"></script>
+    <script src="js/aos.js"></script>
+
+
+
+</body>
+
+</html>
